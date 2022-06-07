@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import FunctionTimer from './components/FunctionTimer';
+import ClassTimer from './components/ClassTimer';
+
+const styles = {
+  container: {
+    height: '100vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={styles.container}>
+        <FunctionTimer/>
+        <ClassTimer/>
+      </div>
+    </>
   );
 }
 
